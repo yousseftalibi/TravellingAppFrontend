@@ -4,3 +4,13 @@ input[type="checkbox"] {
     margin-right: 10px;
 }
 
+  .user-trips {
+    width: 1800px; 
+    margin: 20px auto; 
+  }
+  
+
+  .table thead th {
+    background-color: #333;
+    color: white;
+  }

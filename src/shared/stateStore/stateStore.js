@@ -9,14 +9,3 @@ export const useLoggedIn = create(set => ({
     }
 }));
 
-/*export const useLoggedIn = create(set => ({
-    loggedIn: true,
-    setLoggedIn: (value) => set(state => ({ loggedIn: true }))
-}))
-*/
-
-
-export const nextClicked = create( set => ( {
-    nextClicked : '',
-    setNextClicked : (value) => set(state => ({nextClicked: value}))
-}))

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from  '../logo.jpg';
+import logo from  '../logo.png';
 /*
     Logo generated using Bing chat image creator
 */
@@ -13,11 +13,9 @@ const Footer = () => {
                     <div className="container text-center text-md-start mt-3">
                         <div className="row mt-1">
                             <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-                                <h4 className="text-uppercase fw-bold mt-3 mb-5 ml-4 ">
-                                    Trippy
-                                </h4>
+                           
                                 <p>
-                                <img className="img-fluid" src={logo} alt="Trippy logo" style={{ width: "30%" }}></img>
+                                <img className="img-fluid" src={logo} alt="Travelers logo" style={{ width: "50%" }}></img>
                                 </p>
                             </div>
 
@@ -61,8 +59,8 @@ const Footer = () => {
                                 <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
                                 <p>10 Rue de Vanves, 92130 Issy-les-Moulineaux <br />
 
-                                    yousseftalibi@outlook.com</p>
-                                <a href="#!" className="text-reset" >yousseftalibi.fakedomain</a>
+                                    Travelers@outlook.com</p>
+                                <a href="#!" className="text-reset" >Travelers.com</a>
                                 <br /> <br />
 
                                 <p>All rights reserved.</p>

@@ -1,3 +1,4 @@
+import './AddPlace.css';
 import { AgGridReact } from 'ag-grid-react';
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import 'ag-grid-community/styles/ag-grid.css';
@@ -177,28 +178,24 @@ const AddPlace = () => {
     <Async>
 
       <>
-
-        <style>{`
-          .ag-header-cell-menu-button {
-            opacity: 1 !important;
-          }
-        `}</style>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <label>Destination</label>
-        <input
+        <div class="parent">
+        <div class="form-container">
+        <br/><br/><label>Destination</label><br/>
+        <div class="addPlaceInputs">
+            <input
             type="text"
             value={destination}
             onChange={handleDestinationChange}
             placeholder="Where to?"
           />
-          <br/>
+          <br/><br/>
           <label>Duration in minutes</label>
          <input
             type="text"
             value={minutes}
             onChange={handleMinutesChange}
             placeholder="For how many minutes?"
-          />
+          /><br/><br/>
 
           <label>Maximum in budget</label>
          <input
@@ -207,9 +204,17 @@ const AddPlace = () => {
             onChange={handleBudgetMaxChange}
             placeholder="What's your budget?"
           />
+        </div>
+        
+           <br/><br/>
+           </div>
+
+        </div>
+
+        <div>
 
         { getPlaces ?   (
-          <div style={{ display: 'flex', justifyContent:'center', alignItems:'center', width: '100%' }}>
+          <div style={{ display: 'flex', justifyContent:'center', alignItems:'center', width: '100%', marginLeft:'-120px' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               { places.length > 0 && !clicked && <MapComponent places={places} />}
               <button type='button' style={{visibility: !streaming && places.length > 0 && !clicked? 'visible' : 'hidden'}} onClick={addTrip}>Find Trip Path and Add Trip</button>
@@ -234,7 +239,7 @@ const AddPlace = () => {
             
             <div>
               <>
-              { resultPlaces.length == 0 ? (<p>No path was found. Change parameters </p> )  : (
+              { resultPlaces.length === 0 ? (<p>No path was found. Change parameters </p> )  : (
                 <div>
                   <br/> <br/>
               <p>Trip Path to visit: </p> <br/>
@@ -247,6 +252,7 @@ const AddPlace = () => {
           }
           </div>) : (<button type='button' onClick={handleGetPlaces} disabled={!destination}>Get Places </button>)}
         </div>
+
         </>
     </Async>
   )

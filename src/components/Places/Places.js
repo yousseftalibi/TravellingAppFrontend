@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import { Table } from "react-bootstrap";
-
+import "./Places.css";
 const VisitedPlaces = () => {
   const [trips, setTrips] = useState([]);
   const userId = Cookies.get("userId") ;

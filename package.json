@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "fortawesome/react-fontawesome",
     "@popperjs/core": "^2.11.6",
     "@react-google-maps/api": "^2.18.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -12,6 +15,7 @@
     "ag-grid-react": "^29.2.0",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.2.3",
+    "fortawesome": "^0.0.1-security",
     "js-cookie": "^3.0.1",
     "kafka-node": "^5.0.0",
     "react": "^18.2.0",
