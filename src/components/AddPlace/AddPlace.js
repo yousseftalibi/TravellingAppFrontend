@@ -241,7 +241,7 @@ const AddPlace = () => {
               <>
               { resultPlaces.length === 0 ? (<p>No path was found. Change parameters </p> )  : (
                 <div>
-                  <br/> <br/>
+                  <br/>
               <p>Trip Path to visit: </p> <br/>
               {resultPlaces.map((place, index) => (
               <p key={index}>{place.name}</p>
